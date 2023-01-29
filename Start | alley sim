@@ -1,8 +1,9 @@
 --{ Made by T31#3500 & HamzaSussy#2971 }--
 
 
-getgenv.Afk = true
- while getgenv.Afk do
+local afk = true
+ while afk do
+task.wait()
 
 inventorySpace = game:GetService("Players").LocalPlayer.playerStats.inventorySpace
 local weight = game:GetService("Players").LocalPlayer.playerStats.weight
@@ -261,3 +262,4 @@ wait(2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(123.940628, 9.33114147, -243.262482) -- trash spot
    end
 end)
+end
