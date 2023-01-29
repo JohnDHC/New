@@ -1,0 +1,263 @@
+--{ Made by T31#3500 & HamzaSussy#2971 }--
+
+
+getgenv.Afk = true
+ while getgenv.Afk do
+
+inventorySpace = game:GetService("Players").LocalPlayer.playerStats.inventorySpace
+local weight = game:GetService("Players").LocalPlayer.playerStats.weight
+
+
+weight.Changed:Connect(function(newValue)
+    if newValue == inventorySpace.Value then -- everything until sell spot is to bypass anticheat
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(104.747391, 8.02447224, -228.317673)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(64.4281006, 9.00119686, -208.464935)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(58.6851807, 7.29634809, -165.255325)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(60.1093369, 7.45033455, -117.580032)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71.3739166, 7.58903456, -89.0160904) -- sell spot
+wait(2)
+
+local args = {
+    [1] = {
+        ["sock"] = {
+            ["rarity"] = 0.3,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.6,
+            ["img"] = "rbxassetid://5684868683",
+            ["grade"] = 2,
+            ["name"] = "sock"
+        },
+        ["spring"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.25,
+            ["img"] = "rbxassetid://12025882634",
+            ["grade"] = 2,
+            ["name"] = "spring"
+        },
+        ["plank"] = {
+            ["rarity"] = 0.2,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.5,
+            ["img"] = "rbxassetid://20944363",
+            ["grade"] = 2,
+            ["name"] = "plank"
+        },
+        ["battery"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.8,
+            ["img"] = "rbxassetid://10953918865",
+            ["grade"] = 2,
+            ["name"] = "battery"
+        },
+        ["foil"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.2,
+            ["img"] = "rbxassetid://147887823",
+            ["grade"] = 1,
+            ["name"] = "foil"
+        },
+        ["cd"] = {
+            ["rarity"] = 0.24,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 15,
+            ["img"] = "rbxassetid://949160203",
+            ["grade"] = 3,
+            ["name"] = "cd"
+        },
+        ["gold"] = {
+            ["rarity"] = 0.01,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 100,
+            ["img"] = "rbxassetid://5684864491",
+            ["grade"] = 3,
+            ["name"] = "gold doubloon"
+        },
+        ["rotten"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.05,
+            ["img"] = "rbxassetid://12025752984",
+            ["grade"] = 2,
+            ["name"] = "rotten food"
+        },
+        ["comic"] = {
+            ["rarity"] = 0.2,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 250,
+            ["img"] = "rbxassetid://12207060371",
+            ["grade"] = 4,
+            ["name"] = "comic book"
+        },
+        ["tp"] = {
+            ["rarity"] = 0.05,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 1,
+            ["img"] = "rbxassetid://6766522014",
+            ["grade"] = 1,
+            ["name"] = "toilet paper"
+        },
+        ["phone"] = {
+            ["rarity"] = 0.4,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 50,
+            ["img"] = "rbxassetid://1519603285",
+            ["grade"] = 4,
+            ["name"] = "phone"
+        },
+        ["plastic"] = {
+            ["rarity"] = 0.25,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.04,
+            ["img"] = "rbxassetid://5684862728",
+            ["grade"] = 1,
+            ["name"] = "plastic"
+        },
+        ["cardboard"] = {
+            ["rarity"] = 0.15,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.1,
+            ["img"] = "rbxassetid://13390195",
+            ["grade"] = 1,
+            ["name"] = "cardboard"
+        },
+        ["bottle"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 1,
+            ["img"] = "rbxassetid://480355285",
+            ["grade"] = 2,
+            ["name"] = "bottle"
+        },
+        ["can"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.07,
+            ["img"] = "rbxassetid://6874536183",
+            ["grade"] = 1,
+            ["name"] = "empty can"
+        },
+        ["credit"] = {
+            ["rarity"] = 0.4,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 130,
+            ["img"] = "rbxassetid://12207031909",
+            ["grade"] = 4,
+            ["name"] = "credit card"
+        },
+        ["shoe"] = {
+            ["rarity"] = 0.4,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 7.5,
+            ["img"] = "rbxassetid://10912056890",
+            ["grade"] = 3,
+            ["name"] = "shoe"
+        },
+        ["card"] = {
+            ["rarity"] = 0.05,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 20,
+            ["img"] = "rbxassetid://38154272",
+            ["grade"] = 3,
+            ["name"] = "trading card"
+        },
+        ["cloth"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.15,
+            ["img"] = "rbxassetid://9712134761",
+            ["grade"] = 1,
+            ["name"] = "torn cloth"
+        },
+        ["paper"] = {
+            ["rarity"] = 0.25,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.02,
+            ["img"] = "rbxassetid://6835358763",
+            ["grade"] = 1,
+            ["name"] = "paper"
+        },
+        ["electronics"] = {
+            ["rarity"] = 0.3,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 9.6,
+            ["img"] = "rbxassetid://547416328",
+            ["grade"] = 3,
+            ["name"] = "electronics"
+        },
+        ["nail"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.3,
+            ["img"] = "rbxassetid://11362540073",
+            ["grade"] = 2,
+            ["name"] = "nail"
+        }
+    },
+    [2] = 1000000
+}
+
+game:GetService("ReplicatedStorage").SellTrash:FireServer(unpack(args))
+
+wait(3) -- everything until trash spot is so the anti cheat doesnt kill you
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(60.1093369, 7.45033455, -117.580032)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(58.6851807, 7.29634809, -165.255325)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(64.4281006, 9.00119686, -208.464935)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(104.747391, 8.02447224, -228.317673)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(123.940628, 9.33114147, -243.262482) -- trash spot
+   end
+end)
