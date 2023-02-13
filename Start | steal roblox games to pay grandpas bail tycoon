@@ -1,6 +1,0 @@
-_G.Autofarm = true
-while _G.Autofarm
-Wait(1)
-
-game:GetService("ReplicatedStorage").Events.VideoRecorded:FireServer()
-end
