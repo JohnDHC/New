@@ -4,4 +4,8 @@ if game.PlaceId == 11722450615 then
 --game2--
 elseif game.PlaceId == 11257760806 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnDHC/New/main/alley%20sim'))()     -- live in a back alley sim
+--game3--
+elseif game.PlaceId == 11956378658 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnDHC/New/main/Plink%20Incremental'))() -- plinko incremental
 end
+
